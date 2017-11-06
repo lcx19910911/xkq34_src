@@ -1,0 +1,18 @@
+2016-03-20 08:54:40.815:关闭计划任务失败：The Scheduler has been Shutdown.
+---------------
+2016-03-20 09:08:31.363:关闭计划任务失败：The Scheduler has been Shutdown.
+---------------
+2016-03-20 09:13:30.606:关闭计划任务失败：The Scheduler has been Shutdown.
+---------------
+2016-03-20 09:19:54.688:关闭计划任务失败：The Scheduler has been Shutdown.
+---------------
+2016-03-20 09:22:08.660:关闭计划任务失败：The Scheduler has been Shutdown.
+---------------
+2016-03-20 09:24:19.890:关闭计划任务失败：The Scheduler has been Shutdown.
+---------------
+2016-03-20 09:24:44.708:关闭计划任务失败：The Scheduler has been Shutdown.
+---------------
+2016-03-20 09:26:17.953:关闭计划任务失败：The Scheduler has been Shutdown.
+---------------
+2016-03-20 09:28:04.677:到这里了，！网站未安装！
+---------------

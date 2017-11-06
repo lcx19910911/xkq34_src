@@ -1,0 +1,54 @@
+@charset "UTF-8";
+* { box-sizing: border-box;}
+html{color:#000;background:#FFF;font-family:'Microsoft YaHei',sans-serif,Arial;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,strong{padding:0;margin:0;font-family:'Microsoft YaHei',sans-serif,Arial;}
+table{border-collapse:collapse;border-spacing:0;}
+img{border:0;}
+a{text-decoration:none;color:#000;outline:none;}
+var,em,strong{font-style:normal;}
+em,strong,th,var{font-style: normal;font-weight:inherit;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+input,button,textarea,select,optgroup,option{font-family:inherit; font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{*font-size:100%;}
+.clearfix {
+	*zoom: 1;
+}
+.clearfix:after {
+	content: '\200B';
+	clear: both;
+	display: block;
+	height: 0;
+}
+body {
+	margin: 0 auto;
+}
+html {
+	font-size: 12px;
+}
+.wrap {
+	overflow: hidden;
+	width: 100%;
+	min-width: 27rem;
+	max-width: 55rem;
+	margin: 0 auto;
+	padding: 0;
+	background: #FFFFFF;
+}
+header a {
+	color: #333;
+}
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 4rem;
+	min-width: 27rem;
+	max-width: 55rem;
+	overflow: hidden;
+	z-index: 100;
+	margin: 0 auto;
+	background: #ffffff;
+	border-bottom: 1px solid #e6e6e6;
+}

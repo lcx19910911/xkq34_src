@@ -1,0 +1,227 @@
+@charset "UTF-8";
+/* 闽榕首页样式 minrong-home Beigin*/
+html {
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Roboto, Arial, PingFang SC, Hiragino Sans GB, Microsoft Yahei, Microsoft Jhenghei, sans-serif;
+}
+.wrap {
+    background-color: #fff;
+}
+.mr-header img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.mr-imgSbox {
+    position: relative;
+    overflow: hidden;
+    max-width: 55rem;
+    height: auto;
+    margin: .3rem 0;
+}
+
+.mr-container {
+    box-sizing: border-box;
+    margin-bottom: 52px;
+}
+
+.mr-container .mr-imgSbox .imgChildOne img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+}
+.mr-container .mr-mr-imgSbox .mr-imgChildTwo a {
+    display: block;
+}
+.mr-imgChildTwo {
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.mr-imgChildTwo a.mrCz:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.mr-imgChildTwo a.mrCz:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.mr-imgChildTwo a.mrBz:nth-child(1) {
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 36%;
+}
+.mr-imgChildTwo a.mrSz:nth-child(2) {
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 26%;
+    margin-left: .3rem;
+}
+.mr-imgChildTwo a.mrBz:nth-child(3) {
+    float: left;
+    position: absolute;
+    top: 36%;
+    left: 0;
+    width: 50%;
+    height: 37%;
+    margin-top: .3rem;
+}
+.mr-imgChildTwo a.mrBz:nth-child(4) {
+    float: left;
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    width: 50%;
+    height: 37%;
+    margin-top: .3rem;
+    margin-left: .3rem;
+}
+.mr-imgChildTwo a.mrSz:nth-child(5) {
+    float: left;
+    position: absolute;
+    top: 74%;
+    left: 0;
+    width: 50%;
+    height: 26%;
+    margin-left: .3rem;
+}
+.mr-imgChildTwo a.mrBz:nth-child(6) {
+    float: left;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    width: 50%;
+    height: 37%;
+    margin-top: .3rem;
+    margin-left: .3rem;
+}
+
+/* 移动端点击a链接出现蓝边框问题解决 */
+a:link {
+    border-style: none;
+    border-spacing: 0;
+}
+a{
+    margin: 0;
+    padding: 0;
+    outline:none;
+    border:none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color:transparent;
+}
+
+/* 搜索栏 */
+.mr-search {
+    height: 2.8rem;
+    border: #dbdada solid 1px;
+    border-radius: .4rem;
+    -webkit-border-radius: .4rem;
+    -moz-border-radius: .4rem;
+    margin: 1rem 2rem;
+    overflow: hidden;
+}
+.mr-search .mr-inputTxt {
+    width: 80%;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    border: 0;
+    padding-left: 5%;
+    background: 0 0;
+    font-size: 1.1rem;
+}
+.mr-search .mr-searchIcon {
+    float: right;
+    width: 14%;
+    height: 2.8rem;
+    background-color: #135024;
+    border: 0;
+}
+.mr-searchIcon .mr-searchImg {
+    display: block;
+    width: 2.3rem;
+    height: 2.3rem;
+    text-align: center;
+    margin: .2rem auto;
+}
+
+/* 导航 mr-navgation */
+.mr-header .mr-navgation {
+    overflow: hidden;
+    width: 100%;
+    padding: 0.3rem 1rem;
+    background-color: #fff;
+}
+.mr_navBacksset {
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+a .mr-navClass {
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+}
+a .mr-navClass .mr-navClass_up {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+}
+a .mr-navClass .mr-navClass_down {
+    padding-top: 3px;
+    text-align: center;
+    color: #757474;
+}
+
+/* 底部 */
+.menuNav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    box-shadow: 0 -2px 5px #ccc;
+    background-color: #000;
+    font-size: 12px;
+}
+
+.menuNav ul li {
+    float: left;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    display: table;
+}
+
+.navcontent {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+a.navcontColor {
+    color: #1f6d00;
+}
+
+.navcontent img {
+    display: block;
+    margin: 0 auto 2px;
+}
+/* 闽榕首页样式 minrong-home End*/

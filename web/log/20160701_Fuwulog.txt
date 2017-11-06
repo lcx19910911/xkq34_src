@@ -1,0 +1,28 @@
+2016-07-01 09:04:26:当前模板类型：OrderCreate,会员|分销商|5e21cc85436b48c693fd7816345d6a97
+---------------
+2016-07-01 09:04:26:当前微信模板类型：OrderCreate,会员o3nY2v4W1fZxLbOov-REkcVcBO6Q|分销商o3nY2v4W1fZxLbOov-REkcVcBO6Q|
+---------------
+2016-07-01 09:07:49:当前微信模板类型：OrderCreate,会员o3nY2v4W1fZxLbOov-REkcVcBO6Q|分销商o3nY2v4W1fZxLbOov-REkcVcBO6Q|
+---------------
+2016-07-01 09:07:49:当前模板类型：OrderCreate,会员|分销商|5e21cc85436b48c693fd7816345d6a97
+---------------
+2016-07-01 09:09:31:当前微信模板类型：OrderCreate,会员o3nY2v4W1fZxLbOov-REkcVcBO6Q|分销商o3nY2v4W1fZxLbOov-REkcVcBO6Q|
+---------------
+2016-07-01 09:09:31:当前模板类型：OrderCreate,会员|分销商|5e21cc85436b48c693fd7816345d6a97
+---------------
+2016-07-01 09:11:41:当前微信模板类型：OrderCreate,会员o3nY2v4W1fZxLbOov-REkcVcBO6Q|分销商o3nY2v4W1fZxLbOov-REkcVcBO6Q|
+---------------
+2016-07-01 09:11:41:当前模板类型：OrderCreate,会员|分销商|5e21cc85436b48c693fd7816345d6a97
+---------------
+2016-07-01 09:12:52:当前微信模板类型：OrderCreate,会员o3nY2v4W1fZxLbOov-REkcVcBO6Q|分销商o3nY2v4W1fZxLbOov-REkcVcBO6Q|
+---------------
+2016-07-01 09:12:52:当前模板类型：OrderCreate,会员|分销商|5e21cc85436b48c693fd7816345d6a97
+---------------
+2016-07-01 09:13:30:当前微信模板类型：OrderCreate,会员o3nY2v4W1fZxLbOov-REkcVcBO6Q|分销商o3nY2v4W1fZxLbOov-REkcVcBO6Q|
+---------------
+2016-07-01 09:13:30:当前模板类型：OrderCreate,会员|分销商|5e21cc85436b48c693fd7816345d6a97
+---------------
+2016-07-01 09:42:37:当前微信模板类型：OrderCreate,会员o3nY2v4W1fZxLbOov-REkcVcBO6Q|分销商o3nY2v4W1fZxLbOov-REkcVcBO6Q|
+---------------
+2016-07-01 09:42:37:当前模板类型：OrderCreate,会员|分销商|5e21cc85436b48c693fd7816345d6a97
+---------------

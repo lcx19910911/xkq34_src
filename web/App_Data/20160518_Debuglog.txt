@@ -1,0 +1,11 @@
+2016-05-18 17:38:26.014:ReferralId：1
+
+---------------
+2016-05-18 17:39:48.451:关闭计划任务失败：The Scheduler has been Shutdown.
+---------------
+2016-05-18 17:49:05.429:关闭计划任务失败：The Scheduler has been Shutdown.
+---------------
+2016-05-18 17:52:16.194:关闭计划任务失败：The Scheduler has been Shutdown.
+---------------
+2016-05-18 19:22:21.533:关闭计划任务失败：The Scheduler has been Shutdown.
+---------------

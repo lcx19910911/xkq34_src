@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{978FBAF5-D0D1-45D6-875A-6119DDFE3701}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Hidistro.UI.SaleSystem.CodeBehind</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Hidistro.UI.SaleSystem.CodeBehind</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Hidistro.UI.SaleSystem.CodeBehind.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;D:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Hidistro.UI.SaleSystem.CodeBehind.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;D:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Web" />
+    <Reference Include="Hidistro.Entities">
+      <HintPath>..\Hidistro.Entities\bin\Debug\Hidistro.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="Hidistro.UI.SaleSystem.Tags">
+      <HintPath>..\Hidistro.UI.SaleSystem.Tags\bin\Debug\Hidistro.UI.SaleSystem.Tags.dll</HintPath>
+    </Reference>
+    <Reference Include="ASPNET.WebControls">
+      <HintPath>..\lib\ASPNET.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="Hidistro.SaleSystem.Vshop">
+      <HintPath>..\Hidistro.SaleSystem.Vshop\bin\Debug\Hidistro.SaleSystem.Vshop.dll</HintPath>
+    </Reference>
+    <Reference Include="Hidistro.Core">
+      <HintPath>..\Hidistro.Core\bin\Debug\Hidistro.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>..\lib\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Hidistro.ControlPanel">
+      <HintPath>..\Hidistro.ControlPanel\bin\Debug\Hidistro.ControlPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Hishop.Weixin.MP">
+      <HintPath>..\Hishop.Weixin.MP\bin\Debug\Hishop.Weixin.MP.dll</HintPath>
+    </Reference>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ControlHelper.cs" />
+    <Compile Include="ExpressData.cs" />
+    <Compile Include="NewTemplatedWebControl.cs" />
+    <Compile Include="HomePage.cs" />
+    <Compile Include="PaymentTemplatedWebControl.cs" />
+    <Compile Include="OrderNotify.cs" />
+    <Compile Include="OrderReturn.cs" />
+    <Compile Include="SlideImage.cs" />
+    <Compile Include="StoreCardCreater.cs" />
+    <Compile Include="VFollow.cs" />
+    <Compile Include="VMyBargains.cs" />
+    <Compile Include="VInviteBargainDetial.cs" />
+    <Compile Include="VHelpBargainDetial.cs" />
+    <Compile Include="VBargainDetial.cs" />
+    <Compile Include="ViewOneTao.cs" />
+    <Compile Include="ViewPartInlist.cs" />
+    <Compile Include="VBargainList.cs" />
+    <Compile Include="VMyluckNum.cs" />
+    <Compile Include="VMyOneTao.cs" />
+    <Compile Include="VMyOneTaoIsEnd.cs" />
+    <Compile Include="VMyOneTaoSuccess.cs" />
+    <Compile Include="VNoticeDetail.cs" />
+    <Compile Include="VNotice.cs" />
+    <Compile Include="VChirldrenDistributorDetials.cs" />
+    <Compile Include="DistributorRequest.cs" />
+    <Compile Include="VChirldrenDistributorStores.cs" />
+    <Compile Include="VOneTaoPaySuccess.cs" />
+    <Compile Include="VOneTaoPayView.cs" />
+    <Compile Include="VOneyuanList.cs" />
+    <Compile Include="VOneyuanTaoResult.cs" />
+    <Compile Include="VSecondDistributors.cs" />
+    <Compile Include="VMemberComment.cs" />
+    <Compile Include="VModifyPassWord.cs" />
+    <Compile Include="VMyIntegralDetai.cs" />
+    <Compile Include="VActivityList.cs" />
+    <Compile Include="VBalanceDrawRequesList.cs" />
+    <Compile Include="VBeginVote.cs" />
+    <Compile Include="VCategoryList.cs" />
+    <Compile Include="VChirldrenDistributors.cs" />
+    <Compile Include="VChooseProducts.cs" />
+    <Compile Include="VCommissionDetails.cs" />
+    <Compile Include="VCouponDetails.cs" />
+    <Compile Include="VDefault.cs" />
+    <Compile Include="VDistributorCenter.cs" />
+    <Compile Include="VDistributorCommission.cs" />
+    <Compile Include="VDistributorDescription.cs" />
+    <Compile Include="VDistributorInfo.cs" />
+    <Compile Include="VDistributorOrders.cs" />
+    <Compile Include="VExchangeDetails.cs" />
+    <Compile Include="VExchangeList.cs" />
+    <Compile Include="VDistributorRegCheck.cs" />
+    <Compile Include="VFriendsCircleDetail.cs" />
+    <Compile Include="VGame.cs" />
+    <Compile Include="VGetRedShare.cs" />
+    <Compile Include="VGetSuccess.cs" />
+    <Compile Include="VArticleDetail.cs" />
+    <Compile Include="VMemberCoupons.cs" />
+    <Compile Include="VMyCouponLists.cs" />
+    <Compile Include="VMyMembers.cs" />
+    <Compile Include="VMyPrizeList.cs" />
+    <Compile Include="VMyRanking.cs" />
+    <Compile Include="VMyProducts.cs" />
+    <Compile Include="VNineImages.cs" />
+    <Compile Include="VProductListAll.cs" />
+    <Compile Include="VProductSearch.cs" />
+    <Compile Include="VGetRedPager.cs" />
+    <Compile Include="VRequestCommissions.cs" />
+    <Compile Include="VRequestDistributorFinish.cs" />
+    <Compile Include="VResourceNotFound.cs" />
+    <Compile Include="VShoppingCartEmpty.cs" />
+    <Compile Include="VStoreCard.cs" />
+    <Compile Include="VStorePromotion.cs" />
+    <Compile Include="VSubmmitOrder.cs" />
+    <Compile Include="VProductDetails.cs" />
+    <Compile Include="VProductDescription.cs" />
+    <Compile Include="VShoppingCart.cs" />
+    <Compile Include="VShippingAddresses.cs" />
+    <Compile Include="VAddShippingAddress.cs" />
+    <Compile Include="VMemberCenter.cs" />
+    <Compile Include="VEditShippingAddress.cs" />
+    <Compile Include="VFinishOrder.cs" />
+    <Compile Include="VBindUserMessage.cs" />
+    <Compile Include="VUserLogining.cs" />
+    <Compile Include="VVote.cs" />
+    <Compile Include="VActivity.cs" />
+    <Compile Include="VProductList.cs" />
+    <Compile Include="VImageTextDetails.cs" />
+    <Compile Include="VLoginGuide.cs" />
+    <Compile Include="VLogin.cs" />
+    <Compile Include="VProductConsultations.cs" />
+    <Compile Include="VMyConsultations.cs" />
+    <Compile Include="VProductReview.cs" />
+    <Compile Include="VMyFavorites.cs" />
+    <Compile Include="VMyLogistics.cs" />
+    <Compile Include="VUserInfo.cs" />
+    <Compile Include="VBrandDetail.cs" />
+    <Compile Include="VBrandList.cs" />
+    <Compile Include="VMemberOrders.cs" />
+    <Compile Include="VMemberOrderDetails.cs" />
+    <Compile Include="VUserLogin.cs" />
+    <Compile Include="VRegister.cs" />
+    <Compile Include="VSaleService.cs" />
+    <Compile Include="VFriendsCircle.cs" />
+    <Compile Include="VNameCard.cs" />
+    <Compile Include="VQRcode.cs" />
+    <Compile Include="VHelper.cs" />
+    <Compile Include="VLoginOut.cs" />
+    <Compile Include="VActivityDetail.cs" />
+    <Compile Include="VMemberOrderReturn.cs" />
+    <Compile Include="VMemberOrderReturnGoods.cs" />
+    <Compile Include="VRequestReturn.cs" />
+    <Compile Include="VProgressCheck.cs" />
+    <Compile Include="VProgressDetail.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hidistro.UI.Common.Controls\Hidistro.UI.Common.Controls.csproj">
+      <Project>{A35FCFAC-6AE6-43DD-A0C8-066CC51A3781}</Project>
+      <Name>Hidistro.UI.Common.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hishop.Plugins\Hishop.Plugins.csproj">
+      <Project>{FE80FC2D-8E82-49F8-8043-38F516583C39}</Project>
+      <Name>Hishop.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
