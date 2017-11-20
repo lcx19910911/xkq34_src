@@ -221,8 +221,26 @@
                 case 3:
                     gameName = "四等奖";
                     break;
+                case 4:
+                    gameName = "五等奖";
+                    break;
+                case 5:
+                    gameName = "六等奖";
+                    break;
+                case 6:
+                    gameName = "七等奖";
+                    break;
+                case 7:
+                    gameName = "八等奖";
+                    break;
+                case 8:
+                    gameName = "九等奖";
+                    break;
+                case 9:
+                    gameName = "十等奖";
+                    break;
                 default:
-                    ShowMsg("最多只能添加4个奖项！");
+                    ShowMsg("最多只能添加10个奖项！");
                     return;
             }
             $('.setTab ul.navTab li').removeClass('active');

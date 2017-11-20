@@ -124,7 +124,13 @@ namespace Hidistro.UI.Web.Admin.promotion
             this.lbPrizeGade0.Text = string.Format("{0}：{1}", PrizeGrade.一等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.一等奖).PrizeType.ToString());
             this.lbPrizeGade1.Text = string.Format("{0}：{1}", PrizeGrade.二等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.二等奖).PrizeType.ToString());
             this.lbPrizeGade2.Text = string.Format("{0}：{1}", PrizeGrade.三等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.三等奖).PrizeType.ToString());
-            this.lbPrizeGade3.Text = string.Format("{0}：{1}", PrizeGrade.四等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.四等奖).PrizeType.ToString());
+            this.lbPrizeGade3.Text = string.Format("{0}：{1}", PrizeGrade.四等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.四等奖).PrizeType.ToString()); this.lbPrizeGade0.Text = string.Format("{0}：{1}", PrizeGrade.五等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.五等奖).PrizeType.ToString());
+            this.lbPrizeGade1.Text = string.Format("{0}：{1}", PrizeGrade.六等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.六等奖).PrizeType.ToString());
+            this.lbPrizeGade2.Text = string.Format("{0}：{1}", PrizeGrade.七等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.七等奖).PrizeType.ToString());
+            this.lbPrizeGade3.Text = string.Format("{0}：{1}", PrizeGrade.八等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.八等奖).PrizeType.ToString());
+            this.lbPrizeGade2.Text = string.Format("{0}：{1}", PrizeGrade.九等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.九等奖).PrizeType.ToString());
+            this.lbPrizeGade3.Text = string.Format("{0}：{1}", PrizeGrade.十等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.十等奖).PrizeType.ToString());
+
         }
     }
 }

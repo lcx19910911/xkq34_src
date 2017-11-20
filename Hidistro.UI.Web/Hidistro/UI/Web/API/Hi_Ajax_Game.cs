@@ -295,6 +295,12 @@ namespace Hidistro.UI.Web.API
             GamePrizeInfo gamePrizeInfo2 = new GamePrizeInfo();
             GamePrizeInfo gamePrizeInfo3 = new GamePrizeInfo();
             GamePrizeInfo gamePrizeInfo4 = new GamePrizeInfo();
+            GamePrizeInfo gamePrizeInfo5 = new GamePrizeInfo();
+            GamePrizeInfo gamePrizeInfo6 = new GamePrizeInfo();
+            GamePrizeInfo gamePrizeInfo7 = new GamePrizeInfo();
+            GamePrizeInfo gamePrizeInfo8 = new GamePrizeInfo();
+            GamePrizeInfo gamePrizeInfo9 = new GamePrizeInfo();
+            GamePrizeInfo gamePrizeInfo10 = new GamePrizeInfo();
             switch (gamePrizeListsByGameId.Count<GamePrizeInfo>())
             {
                 case 1:
@@ -479,6 +485,795 @@ namespace Hidistro.UI.Web.API
                             prizeType = gamePrizeInfo4.PrizeGrade.ToString(),
                             prizeCount = gamePrizeInfo4.PrizeRate,
                             prizeName = GameHelper.GetPrizeName(gamePrizeInfo4.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        break;
+                    }
+                case 5:
+                    {
+                        gamePrizeInfo = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.一等奖);
+                        string prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo.PrizeType,
+                            GivePoint = gamePrizeInfo.GivePoint,
+                            GiveCouponId = gamePrizeInfo.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo.PrizeId,
+                            prize = gamePrizeInfo.Prize,
+                            prizeType = gamePrizeInfo.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo2 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.二等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo2.PrizeType,
+                            GivePoint = gamePrizeInfo2.GivePoint,
+                            GiveCouponId = gamePrizeInfo2.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo2.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo2.PrizeId,
+                            prize = gamePrizeInfo2.Prize,
+                            prizeType = gamePrizeInfo2.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo2.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo2.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo3 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.三等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo3.PrizeType,
+                            GivePoint = gamePrizeInfo3.GivePoint,
+                            GiveCouponId = gamePrizeInfo3.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo3.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo3.PrizeId,
+                            prize = gamePrizeInfo3.Prize,
+                            prizeType = gamePrizeInfo3.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo3.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo3.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo4 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.四等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo4.PrizeType,
+                            GivePoint = gamePrizeInfo4.GivePoint,
+                            GiveCouponId = gamePrizeInfo4.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo4.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo4.PrizeId,
+                            prize = gamePrizeInfo4.Prize,
+                            prizeType = gamePrizeInfo4.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo4.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo4.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo5 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.五等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo5.PrizeType,
+                            GivePoint = gamePrizeInfo5.GivePoint,
+                            GiveCouponId = gamePrizeInfo5.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo5.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo5.PrizeId,
+                            prize = gamePrizeInfo5.Prize,
+                            prizeType = gamePrizeInfo5.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo5.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo5.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        break;
+                    }
+                case 6:
+                    {
+                        gamePrizeInfo = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.一等奖);
+                        string prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo.PrizeType,
+                            GivePoint = gamePrizeInfo.GivePoint,
+                            GiveCouponId = gamePrizeInfo.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo.PrizeId,
+                            prize = gamePrizeInfo.Prize,
+                            prizeType = gamePrizeInfo.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo2 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.二等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo2.PrizeType,
+                            GivePoint = gamePrizeInfo2.GivePoint,
+                            GiveCouponId = gamePrizeInfo2.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo2.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo2.PrizeId,
+                            prize = gamePrizeInfo2.Prize,
+                            prizeType = gamePrizeInfo2.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo2.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo2.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo3 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.三等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo3.PrizeType,
+                            GivePoint = gamePrizeInfo3.GivePoint,
+                            GiveCouponId = gamePrizeInfo3.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo3.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo3.PrizeId,
+                            prize = gamePrizeInfo3.Prize,
+                            prizeType = gamePrizeInfo3.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo3.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo3.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo4 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.四等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo4.PrizeType,
+                            GivePoint = gamePrizeInfo4.GivePoint,
+                            GiveCouponId = gamePrizeInfo4.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo4.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo4.PrizeId,
+                            prize = gamePrizeInfo4.Prize,
+                            prizeType = gamePrizeInfo4.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo4.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo4.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo5 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.五等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo5.PrizeType,
+                            GivePoint = gamePrizeInfo5.GivePoint,
+                            GiveCouponId = gamePrizeInfo5.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo5.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo5.PrizeId,
+                            prize = gamePrizeInfo5.Prize,
+                            prizeType = gamePrizeInfo5.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo5.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo5.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo6 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.六等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo6.PrizeType,
+                            GivePoint = gamePrizeInfo6.GivePoint,
+                            GiveCouponId = gamePrizeInfo6.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo6.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo6.PrizeId,
+                            prize = gamePrizeInfo6.Prize,
+                            prizeType = gamePrizeInfo6.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo6.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo6.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        break;
+                    }
+                case 7:
+                    {
+                        gamePrizeInfo = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.一等奖);
+                        string prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo.PrizeType,
+                            GivePoint = gamePrizeInfo.GivePoint,
+                            GiveCouponId = gamePrizeInfo.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo.PrizeId,
+                            prize = gamePrizeInfo.Prize,
+                            prizeType = gamePrizeInfo.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo2 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.二等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo2.PrizeType,
+                            GivePoint = gamePrizeInfo2.GivePoint,
+                            GiveCouponId = gamePrizeInfo2.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo2.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo2.PrizeId,
+                            prize = gamePrizeInfo2.Prize,
+                            prizeType = gamePrizeInfo2.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo2.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo2.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo3 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.三等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo3.PrizeType,
+                            GivePoint = gamePrizeInfo3.GivePoint,
+                            GiveCouponId = gamePrizeInfo3.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo3.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo3.PrizeId,
+                            prize = gamePrizeInfo3.Prize,
+                            prizeType = gamePrizeInfo3.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo3.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo3.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo4 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.四等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo4.PrizeType,
+                            GivePoint = gamePrizeInfo4.GivePoint,
+                            GiveCouponId = gamePrizeInfo4.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo4.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo4.PrizeId,
+                            prize = gamePrizeInfo4.Prize,
+                            prizeType = gamePrizeInfo4.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo4.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo4.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo5 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.五等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo5.PrizeType,
+                            GivePoint = gamePrizeInfo5.GivePoint,
+                            GiveCouponId = gamePrizeInfo5.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo5.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo5.PrizeId,
+                            prize = gamePrizeInfo5.Prize,
+                            prizeType = gamePrizeInfo5.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo5.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo5.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo6 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.六等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo6.PrizeType,
+                            GivePoint = gamePrizeInfo6.GivePoint,
+                            GiveCouponId = gamePrizeInfo6.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo6.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo6.PrizeId,
+                            prize = gamePrizeInfo6.Prize,
+                            prizeType = gamePrizeInfo6.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo6.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo6.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo7 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.七等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo7.PrizeType,
+                            GivePoint = gamePrizeInfo7.GivePoint,
+                            GiveCouponId = gamePrizeInfo7.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo7.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo7.PrizeId,
+                            prize = gamePrizeInfo7.Prize,
+                            prizeType = gamePrizeInfo7.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo7.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo7.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        break;
+                    }
+                case 8:
+                    {
+                        gamePrizeInfo = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.一等奖);
+                        string prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo.PrizeType,
+                            GivePoint = gamePrizeInfo.GivePoint,
+                            GiveCouponId = gamePrizeInfo.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo.PrizeId,
+                            prize = gamePrizeInfo.Prize,
+                            prizeType = gamePrizeInfo.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo2 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.二等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo2.PrizeType,
+                            GivePoint = gamePrizeInfo2.GivePoint,
+                            GiveCouponId = gamePrizeInfo2.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo2.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo2.PrizeId,
+                            prize = gamePrizeInfo2.Prize,
+                            prizeType = gamePrizeInfo2.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo2.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo2.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo3 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.三等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo3.PrizeType,
+                            GivePoint = gamePrizeInfo3.GivePoint,
+                            GiveCouponId = gamePrizeInfo3.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo3.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo3.PrizeId,
+                            prize = gamePrizeInfo3.Prize,
+                            prizeType = gamePrizeInfo3.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo3.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo3.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo4 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.四等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo4.PrizeType,
+                            GivePoint = gamePrizeInfo4.GivePoint,
+                            GiveCouponId = gamePrizeInfo4.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo4.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo4.PrizeId,
+                            prize = gamePrizeInfo4.Prize,
+                            prizeType = gamePrizeInfo4.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo4.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo4.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo5 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.五等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo5.PrizeType,
+                            GivePoint = gamePrizeInfo5.GivePoint,
+                            GiveCouponId = gamePrizeInfo5.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo5.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo5.PrizeId,
+                            prize = gamePrizeInfo5.Prize,
+                            prizeType = gamePrizeInfo5.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo5.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo5.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo6 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.六等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo6.PrizeType,
+                            GivePoint = gamePrizeInfo6.GivePoint,
+                            GiveCouponId = gamePrizeInfo6.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo6.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo6.PrizeId,
+                            prize = gamePrizeInfo6.Prize,
+                            prizeType = gamePrizeInfo6.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo6.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo6.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo7 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.七等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo7.PrizeType,
+                            GivePoint = gamePrizeInfo7.GivePoint,
+                            GiveCouponId = gamePrizeInfo7.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo7.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo7.PrizeId,
+                            prize = gamePrizeInfo7.Prize,
+                            prizeType = gamePrizeInfo7.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo7.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo7.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo8 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.八等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo8.PrizeType,
+                            GivePoint = gamePrizeInfo8.GivePoint,
+                            GiveCouponId = gamePrizeInfo8.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo8.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo8.PrizeId,
+                            prize = gamePrizeInfo8.Prize,
+                            prizeType = gamePrizeInfo8.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo8.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo8.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        break;
+                    }
+                case 9:
+                    {
+                        gamePrizeInfo = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.一等奖);
+                        string prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo.PrizeType,
+                            GivePoint = gamePrizeInfo.GivePoint,
+                            GiveCouponId = gamePrizeInfo.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo.PrizeId,
+                            prize = gamePrizeInfo.Prize,
+                            prizeType = gamePrizeInfo.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo2 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.二等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo2.PrizeType,
+                            GivePoint = gamePrizeInfo2.GivePoint,
+                            GiveCouponId = gamePrizeInfo2.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo2.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo2.PrizeId,
+                            prize = gamePrizeInfo2.Prize,
+                            prizeType = gamePrizeInfo2.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo2.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo2.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo3 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.三等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo3.PrizeType,
+                            GivePoint = gamePrizeInfo3.GivePoint,
+                            GiveCouponId = gamePrizeInfo3.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo3.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo3.PrizeId,
+                            prize = gamePrizeInfo3.Prize,
+                            prizeType = gamePrizeInfo3.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo3.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo3.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo4 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.四等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo4.PrizeType,
+                            GivePoint = gamePrizeInfo4.GivePoint,
+                            GiveCouponId = gamePrizeInfo4.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo4.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo4.PrizeId,
+                            prize = gamePrizeInfo4.Prize,
+                            prizeType = gamePrizeInfo4.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo4.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo4.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo5 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.五等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo5.PrizeType,
+                            GivePoint = gamePrizeInfo5.GivePoint,
+                            GiveCouponId = gamePrizeInfo5.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo5.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo5.PrizeId,
+                            prize = gamePrizeInfo5.Prize,
+                            prizeType = gamePrizeInfo5.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo5.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo5.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo6 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.六等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo6.PrizeType,
+                            GivePoint = gamePrizeInfo6.GivePoint,
+                            GiveCouponId = gamePrizeInfo6.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo6.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo6.PrizeId,
+                            prize = gamePrizeInfo6.Prize,
+                            prizeType = gamePrizeInfo6.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo6.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo6.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo7 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.七等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo7.PrizeType,
+                            GivePoint = gamePrizeInfo7.GivePoint,
+                            GiveCouponId = gamePrizeInfo7.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo7.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo7.PrizeId,
+                            prize = gamePrizeInfo7.Prize,
+                            prizeType = gamePrizeInfo7.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo7.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo7.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo8 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.八等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo8.PrizeType,
+                            GivePoint = gamePrizeInfo8.GivePoint,
+                            GiveCouponId = gamePrizeInfo8.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo8.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo8.PrizeId,
+                            prize = gamePrizeInfo8.Prize,
+                            prizeType = gamePrizeInfo8.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo8.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo8.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo9 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.九等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo9.PrizeType,
+                            GivePoint = gamePrizeInfo9.GivePoint,
+                            GiveCouponId = gamePrizeInfo9.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo9.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo9.PrizeId,
+                            prize = gamePrizeInfo9.Prize,
+                            prizeType = gamePrizeInfo9.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo9.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo9.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        break;
+                    }
+                case 10:
+                    {
+                        gamePrizeInfo = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.一等奖);
+                        string prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo.PrizeType,
+                            GivePoint = gamePrizeInfo.GivePoint,
+                            GiveCouponId = gamePrizeInfo.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo.PrizeId,
+                            prize = gamePrizeInfo.Prize,
+                            prizeType = gamePrizeInfo.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo2 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.二等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo2.PrizeType,
+                            GivePoint = gamePrizeInfo2.GivePoint,
+                            GiveCouponId = gamePrizeInfo2.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo2.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo2.PrizeId,
+                            prize = gamePrizeInfo2.Prize,
+                            prizeType = gamePrizeInfo2.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo2.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo2.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo3 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.三等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo3.PrizeType,
+                            GivePoint = gamePrizeInfo3.GivePoint,
+                            GiveCouponId = gamePrizeInfo3.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo3.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo3.PrizeId,
+                            prize = gamePrizeInfo3.Prize,
+                            prizeType = gamePrizeInfo3.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo3.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo3.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo4 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.四等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo4.PrizeType,
+                            GivePoint = gamePrizeInfo4.GivePoint,
+                            GiveCouponId = gamePrizeInfo4.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo4.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo4.PrizeId,
+                            prize = gamePrizeInfo4.Prize,
+                            prizeType = gamePrizeInfo4.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo4.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo4.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo5 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.五等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo5.PrizeType,
+                            GivePoint = gamePrizeInfo5.GivePoint,
+                            GiveCouponId = gamePrizeInfo5.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo5.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo5.PrizeId,
+                            prize = gamePrizeInfo5.Prize,
+                            prizeType = gamePrizeInfo5.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo5.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo5.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo6 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.六等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo6.PrizeType,
+                            GivePoint = gamePrizeInfo6.GivePoint,
+                            GiveCouponId = gamePrizeInfo6.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo6.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo6.PrizeId,
+                            prize = gamePrizeInfo6.Prize,
+                            prizeType = gamePrizeInfo6.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo6.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo6.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo7 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.七等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo7.PrizeType,
+                            GivePoint = gamePrizeInfo7.GivePoint,
+                            GiveCouponId = gamePrizeInfo7.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo7.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo7.PrizeId,
+                            prize = gamePrizeInfo7.Prize,
+                            prizeType = gamePrizeInfo7.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo7.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo7.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo8 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.八等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo8.PrizeType,
+                            GivePoint = gamePrizeInfo8.GivePoint,
+                            GiveCouponId = gamePrizeInfo8.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo8.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo8.PrizeId,
+                            prize = gamePrizeInfo8.Prize,
+                            prizeType = gamePrizeInfo8.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo8.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo8.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo9 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.九等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo9.PrizeType,
+                            GivePoint = gamePrizeInfo9.GivePoint,
+                            GiveCouponId = gamePrizeInfo9.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo9.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo9.PrizeId,
+                            prize = gamePrizeInfo9.Prize,
+                            prizeType = gamePrizeInfo9.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo9.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo9.PrizeType, prizeFullName),
+                            PrizeFullName = prizeFullName
+                        });
+                        gamePrizeInfo10 = gamePrizeListsByGameId.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.十等奖);
+                        prizeFullName = GameHelper.GetPrizeFullName(new PrizeResultViewInfo
+                        {
+                            PrizeType = gamePrizeInfo10.PrizeType,
+                            GivePoint = gamePrizeInfo10.GivePoint,
+                            GiveCouponId = gamePrizeInfo10.GiveCouponId,
+                            GiveShopBookId = gamePrizeInfo10.GiveShopBookId
+                        });
+                        list.Add(new Hi_Ajax_Game.PrizeData
+                        {
+                            prizeId = gamePrizeInfo10.PrizeId,
+                            prize = gamePrizeInfo10.Prize,
+                            prizeType = gamePrizeInfo10.PrizeGrade.ToString(),
+                            prizeCount = gamePrizeInfo10.PrizeRate,
+                            prizeName = GameHelper.GetPrizeName(gamePrizeInfo10.PrizeType, prizeFullName),
                             PrizeFullName = prizeFullName
                         });
                         break;

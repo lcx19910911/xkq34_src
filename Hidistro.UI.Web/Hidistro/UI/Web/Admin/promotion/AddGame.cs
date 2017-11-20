@@ -26,6 +26,19 @@ namespace Hidistro.UI.Web.Admin.promotion
 
         protected System.Web.UI.WebControls.Label lbPrizeGade3;
 
+        protected System.Web.UI.WebControls.Label lbPrizeGade4;
+
+        protected System.Web.UI.WebControls.Label lbPrizeGade5;
+
+        protected System.Web.UI.WebControls.Label lbPrizeGade6;
+
+        protected System.Web.UI.WebControls.Label lbPrizeGade7;
+        protected System.Web.UI.WebControls.Label lbPrizeGade8;
+
+        protected System.Web.UI.WebControls.Label lbPrizeGade9;
+
+        protected System.Web.UI.WebControls.Label lbPrizeGade10;
+
         protected System.Web.UI.WebControls.Label lbGameDescription;
 
         protected System.Web.UI.WebControls.Label lbBeginTime;
@@ -67,8 +80,14 @@ namespace Hidistro.UI.Web.Admin.promotion
 					"一等奖",
 					"二等奖",
 					"三等奖",
-					"四等奖"
-				};
+					"四等奖",
+                    "五等奖",
+                    "六等奖",
+                    "七等奖",
+                    "八等奖",
+                    "九等奖",
+                    "十等奖"
+                };
                 int num2 = 0;
                 bool flag = GameHelper.Create(gameInfo, out num);
                 if (!flag)
@@ -125,6 +144,12 @@ namespace Hidistro.UI.Web.Admin.promotion
             this.lbPrizeGade1.Text = string.Format("{0}：{1}", PrizeGrade.二等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.二等奖).PrizeType.ToString());
             this.lbPrizeGade2.Text = string.Format("{0}：{1}", PrizeGrade.三等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.三等奖).PrizeType.ToString());
             this.lbPrizeGade3.Text = string.Format("{0}：{1}", PrizeGrade.四等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.四等奖).PrizeType.ToString());
+            this.lbPrizeGade4.Text = string.Format("{0}：{1}", PrizeGrade.五等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.五等奖).PrizeType.ToString());
+            this.lbPrizeGade5.Text = string.Format("{0}：{1}", PrizeGrade.六等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.六等奖).PrizeType.ToString());
+            this.lbPrizeGade6.Text = string.Format("{0}：{1}", PrizeGrade.七等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.七等奖).PrizeType.ToString());
+            this.lbPrizeGade7.Text = string.Format("{0}：{1}", PrizeGrade.八等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.八等奖).PrizeType.ToString());
+            this.lbPrizeGade8.Text = string.Format("{0}：{1}", PrizeGrade.九等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.九等奖).PrizeType.ToString());
+            this.lbPrizeGade9.Text = string.Format("{0}：{1}", PrizeGrade.十等奖, prizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.十等奖).PrizeType.ToString());
         }
     }
 }

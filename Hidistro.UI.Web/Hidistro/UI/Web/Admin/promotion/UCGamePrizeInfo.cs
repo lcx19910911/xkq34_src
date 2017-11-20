@@ -72,6 +72,63 @@ namespace Hidistro.UI.Web.Admin.promotion
                     this._prizeLists.Add(this.GetModel(PrizeGrade.三等奖));
                     this._prizeLists.Add(this.GetModel(PrizeGrade.四等奖));
                     return flag;
+                case 5:
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.一等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.二等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.三等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.四等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.五等奖));
+                    return flag;
+                case 6:
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.一等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.二等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.三等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.四等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.五等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.六等奖));
+                    return flag;
+                case 7:
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.一等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.二等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.三等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.四等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.五等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.六等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.七等奖));
+                    return flag;
+                case 8:
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.一等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.二等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.三等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.四等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.五等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.六等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.七等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.八等奖));
+                    return flag;
+                case 9:
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.一等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.二等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.三等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.四等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.五等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.六等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.七等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.八等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.九等奖));
+                    return flag;
+                case 10:
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.一等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.二等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.三等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.四等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.五等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.六等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.七等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.八等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.九等奖));
+                    this._prizeLists.Add(this.GetModel(PrizeGrade.十等奖));
+                    return flag;
             }
             return flag;
         }
@@ -428,6 +485,63 @@ namespace Hidistro.UI.Web.Admin.promotion
                         stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.二等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.二等奖)));
                         stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.三等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.三等奖)));
                         stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.四等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.四等奖)));
+                        break;
+                    case 5:
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.一等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.一等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.二等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.二等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.三等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.三等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.四等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.四等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.五等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.五等奖)));
+                        break;
+                    case 6:
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.一等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.一等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.二等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.二等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.三等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.三等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.四等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.四等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.五等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.五等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.六等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.六等奖)));
+                        break;
+                    case 7:
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.一等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.一等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.二等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.二等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.三等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.三等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.四等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.四等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.五等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.五等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.六等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.六等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.七等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.七等奖)));
+                        break;
+                    case 8:
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.一等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.一等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.二等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.二等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.三等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.三等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.四等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.四等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.五等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.五等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.六等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.六等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.七等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.七等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.八等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.八等奖)));
+                        break;
+                    case 9:
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.一等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.一等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.二等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.二等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.三等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.三等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.四等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.四等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.五等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.五等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.六等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.六等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.七等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.七等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.八等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.八等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.九等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.九等奖)));
+                        break;
+                    case 10:
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.一等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.一等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.二等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.二等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.三等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.三等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.四等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.四等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.五等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.五等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.六等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.六等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.七等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.七等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.八等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.八等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.九等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.九等奖)));
+                        stringBuilder.Append(this.GetPrizeInfoHtml(PrizeGrade.十等奖, this.PrizeLists.FirstOrDefault((GamePrizeInfo p) => p.PrizeGrade == PrizeGrade.十等奖)));
                         break;
                 }
             }

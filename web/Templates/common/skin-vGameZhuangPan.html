@@ -61,6 +61,34 @@
                         <td class="prize_Info" id="prizeItem2"></td>
                     </tr>
                     <tr style="display:none;">
+                        <td width='25%'>四等奖：</td>
+                        <td class="prize_Info" id="prizeItem3"></td>
+                    </tr>
+                    <tr style="display:none;">
+                        <td width='25%'>五等奖：</td>
+                        <td class="prize_Info" id="prizeItem4"></td>
+                    </tr>
+                    <tr style="display:none;">
+                        <td width='25%'>六等奖：</td>
+                        <td class="prize_Info" id="prizeItem5"></td>
+                    </tr>
+                    <tr style="display:none;">
+                        <td width='25%'>七等奖：</td>
+                        <td class="prize_Info" id="prizeItem6"></td>
+                    </tr>
+                    <tr style="display:none;">
+                        <td width='25%'>八等奖：</td>
+                        <td class="prize_Info" id="prizeItem7"></td>
+                    </tr>
+                    <tr style="display:none;">
+                        <td width='25%'>九等奖：</td>
+                        <td class="prize_Info" id="prizeItem8"></td>
+                    </tr>
+                    <tr style="display:none;">
+                        <td width='25%'>十等奖：</td>
+                        <td class="prize_Info" id="prizeItem9"></td>
+                    </tr>
+                    <tr style="display:none;">
                         <td width='25%'>普通奖：</td>
                         <td class="prize_Info" id="prizeItem3"></td>
                     </tr>
@@ -200,6 +228,24 @@
                 case "四等奖":
                     item = 4;
                     break;
+                case "五等奖":
+                    item = 5;
+                    break;
+                case "六等奖":
+                    item = 6;
+                    break;
+                case "七等奖":
+                    item = 7;
+                    break;
+                case "八等奖":
+                    item = 8;
+                    break;
+                case "九等奖":
+                    item = 9;
+                    break;
+                case "十等奖":
+                    item = 10;
+                    break;
             }
             //hsTips(JSON.stringify(jsonData));
             //获取随机数(奖品个数范围内)
@@ -262,7 +308,7 @@
         var datalist = gameData.prizeLists;
         var datacount = datalist.length;
         //hsTips(JSON.stringify(gameData));
-        var maxLen = 4;
+        var maxLen = 10;
         for (var i = 0; i < maxLen; i++) {
             if (i < datacount) {
                 $("#prizeItem" + i).html(gameData.prizeLists[i % datacount].prize);
@@ -274,8 +320,8 @@
         var a = new Array();
         var b = new Array();
         var c=  new Array();
-        for (var i = 0; i < 8; i++) {
-            if (i == 4) {
+        for (var i = 0; i < 12; i++) {
+            if (i > 10) {
                 a.push("谢谢参与");
                 c.push("0");
             } else {

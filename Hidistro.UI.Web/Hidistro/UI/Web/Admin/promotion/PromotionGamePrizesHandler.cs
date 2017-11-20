@@ -42,6 +42,30 @@ namespace Hidistro.UI.Web.Admin.promotion
                 case 3:
                     prizeGrade = PrizeGrade.四等奖;
                     break;
+                case 4:
+                    prizeGrade = PrizeGrade.五等奖;
+                    break;
+
+                case 5:
+                    prizeGrade = PrizeGrade.六等奖;
+                    break;
+
+                case 6:
+                    prizeGrade = PrizeGrade.七等奖;
+                    break;
+
+                case 7:
+                    prizeGrade = PrizeGrade.八等奖;
+                    break;
+                case 8:
+                    prizeGrade = PrizeGrade.九等奖;
+                    break;
+
+                case 9:
+                    prizeGrade = PrizeGrade.十等奖;
+                    break;
+
+                    
             }
             return ("{\"type\":\"ok\",\"message\":\"" + Globals.String2Json(this.GetPrizeInfoHtml(prizeGrade, null, result, gameId)) + "\"}");
         }

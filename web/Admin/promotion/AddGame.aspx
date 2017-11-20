@@ -50,6 +50,29 @@
                                         <span><span id="sPrizeGade3">
                                             <asp:Label ID="lbPrizeGade3" runat="server" Text=""></asp:Label></span></span>
                                     </p>
+                                    <p>
+                                        <span><span id="sPrizeGade4">
+                                            <asp:Label ID="lbPrizeGade4" runat="server" Text=""></asp:Label></span></span>
+                                    </p>
+                                    <p>
+                                        <span><span id="sPrizeGade5">
+                                            <asp:Label ID="lbPrizeGade5" runat="server" Text=""></asp:Label></span></span>
+                                    </p>
+                                    <p>
+                                        <span><span id="sPrizeGade6">
+                                            <asp:Label ID="lbPrizeGade6" runat="server" Text=""></asp:Label></span></span>
+                                    </p>
+                                    <p>
+                                        <span><span id="sPrizeGade7">
+                                            <asp:Label ID="lbPrizeGade7" runat="server" Text=""></asp:Label></span></span>
+                                    </p>
+                                    <p>
+                                        <span><span id="sPrizeGade8">
+                                            <asp:Label ID="lbPrizeGade8" runat="server" Text=""></asp:Label></span></span>
+                                    </p>   <p>
+                                        <span><span id="sPrizeGade9">
+                                            <asp:Label ID="lbPrizeGade9" runat="server" Text=""></asp:Label></span></span>
+                                    </p>
                                 </div>
                                 <div class="gamePrizes">
                                     <h3>活动说明：</h3>

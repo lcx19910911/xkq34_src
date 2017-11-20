@@ -108,9 +108,9 @@
       <PageLink ID="wxp01"  Title="绑定微信公众号" Link="weixin/wxconfig.aspx"/>
     </Item>
     <Item ID="wxi02" Title="微信设置" Class="glyphicon ico-weixin">
-      <PageLink ID="wxp02"  Title="一键关注" Link="weixin/concernurl.aspx"/>
+      <!--<PageLink ID="wxp02"  Title="一键关注" Link="weixin/concernurl.aspx"/>
       <PageLink ID="wxp07"  Title="一键登录" Link="weixin/validationservice.aspx"/>
-      <PageLink ID="wxp03"  Title="自动回复"  Link="weixin/replyonkey.aspx"/>
+      <PageLink ID="wxp03"  Title="自动回复"  Link="weixin/replyonkey.aspx"/>-->
       <PageLink ID="wxp04"  Title="自定义菜单"  Link="weixin/managemenu.aspx"/>
       <!--<PageLink ID="wxp05"  Title="多客服设置"  Link="weixin/manyservice.aspx"/>
       <PageLink ID="wxp06"  Title="消息模板"  Link="weixin/messagetemplets.aspx"/>-->
